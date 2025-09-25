@@ -1,0 +1,6 @@
+streamlit==1.47.1
+pandas==2.3.0
+numpy==2.2.6
+xgboost==3.0.2
+scikit-learn==1.6.1
+scikit-survival==0.24.1
