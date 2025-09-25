@@ -4,3 +4,4 @@ numpy==2.2.6
 xgboost==3.0.2
 scikit-learn==1.6.1
 scikit-survival==0.24.1
+matplotlib==3.10.3
