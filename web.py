@@ -6,6 +6,7 @@ import xgboost as xgb
 import matplotlib as mpl
 from matplotlib import pyplot as plt
 from sksurv.ensemble import RandomSurvivalForest
+import gzip
 
 # 设置页面
 st.set_page_config(
@@ -45,9 +46,11 @@ st.markdown('<h1 class="main-header">Random Survival Forest Prediction Model</h1
 @st.cache_resource
 def load_model():
     # 这里替换为你的模型加载代码
-    with open('rsf.pkl', 'rb') as f:
-        model = pickle.load(f)
+    # with open('rsf.pkl', 'rb') as f:
+        #model = pickle.load(f)
     # 返回一个示例模型（实际使用时请替换为你的模型）
+    with gzip.open('rsf.pkl.gz', 'rb') as f:
+        model = pickle.load(f)
     return model
 
 model = load_model()
