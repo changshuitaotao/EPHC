@@ -213,4 +213,5 @@ else:
 
 # 添加页脚
 st.markdown("---")
-st.markdown("© 2025 Chinese PLA General Hospital| Based on Random Survival Forest Model")
+st.markdown("© 2025 Chinese Sun Yat-sen University Cancer Center| Based on Random Survival Forest Model")
+# st.markdown("© 2025 Chinese PLA General Hospital| Based on Random Survival Forest Model")
